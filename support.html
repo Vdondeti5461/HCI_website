@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Support - Trading Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <!-- Header content similar to other pages -->
+        <div class="logo">
+            <img src="logo.png" alt="Trading Platform Logo"> <!-- Adjust src as needed -->
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="educational.html">Educational Resources</a></li>
+                <li><a href="demo.html">Demo Account</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="community.html">Community</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="support-section">
+            <!-- Other support options... -->
+            <h1>Support Center</h1>
+
+            <div class="support-options">
+                <!-- Call Option -->
+                <div class="support-item">
+                    <h2>Call Us</h2>
+                    <p>Need immediate assistance? Just click the button below to call us!</p>
+                    <a href="tel:+1234567890" class="call-button">Call Now</a>
+                </div>
+
+                <!-- Chat Option -->
+                <div class="support-item">
+                    <h2>Chat with VaSid</h2>
+                    <p>Our chatbot VaSid is here to help you 24/7. Click below to start chatting!</p>
+                    <button onclick="openChat()">Chat Now</button>
+                </div>
+
+                <!-- Email Option -->
+                <div class="support-item">
+                    <h2>Email Us</h2>
+                    <p>Prefer to write us an email? Send us your queries and we'll get back to you as soon as possible.</p>
+                    <a href="mailto:support@tradingplatform.com" >Send Email </a>
+                </div>
+
+            <!-- Chatbot Widget -->
+            <div class="chatbot-widget">
+                <div id="chatbot" class="chatbot-closed">
+                    <div class="chatbot-header" onclick="toggleChatbot()">
+                        <span>Chat with VaSid</span>
+                        <span class="chatbot-toggle">+</span>
+                    </div>
+                    <div class="chatbot-body">
+                        <!-- Chatbot messages will go here -->
+                    </div>
+                    <div class="chatbot-input">
+                        <input type="text" placeholder="Type your message...">
+                        <button onclick="sendMessage()">Send</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <!-- Footer content similar to other pages -->
+        <p>Stay connected for the latest in trading at our platform.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Contact Us</a>
+        </div>
+        <p>© 2023 Trading Platform. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
