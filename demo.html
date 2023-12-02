@@ -10,7 +10,7 @@
         <!-- Header content -->
         <!-- ... -->
         <div class="logo">
-            <img src="logo.png" alt="Trading Platform Logo">
+            <a href="https://www.youtube.com/"><img src="Logo1.png" alt="Trading Platform Logo"></a>
         </div>
         <nav class="main-nav">
             <ul>
@@ -23,7 +23,7 @@
             <div class="search-container">
                 <input type="text" id="search-input" placeholder="Search...">
                 <button class="search-button">&#128269;</button>
-            </div>
+            </div>   
         </nav>
     </header>
 
@@ -39,6 +39,16 @@
 
         <section class="sandbox-environment" style="display:none;">
             <h2>Sandbox Trading Environment</h2>
+            <div class="sandbox-info">
+                <h3>Sandbox Environment Info</h3>
+                <p>In this sandbox, you can practice trading with virtual money. Here's how it works:</p>
+                <ul>
+                    <li><strong>Real-Time Data Simulation:</strong> The platform simulates live market conditions.</li>
+                    <li><strong>Interactive Charts:</strong> Use charts to analyze trends and make decisions.</li>
+                    <li><strong>Trade Execution:</strong> Practice buying and selling stocks or other assets.</li>
+                    <!-- Additional points -->
+                </ul>
+            </div>
             <div class="trading-dashboard">
                 <div class="market-stats">
                     <h3>Market Statistics</h3>
@@ -68,7 +78,43 @@
                 <p>ETFs: <strong>20</strong></p>
                 <!-- Additional portfolio items -->
             </div>
-        </section>
+            <!-- ... existing content ... -->
+
+            <div class="market-stats">
+               <h3>Live Market Statistics</h3>
+                <div class="stat-item">
+                <img src="up-arrow-icon.png" alt="Rising"> <!-- Icon indicating rising stock -->
+                <p>S&P 500: <strong class="rising">3,890.30</strong> <span class="change positive">+0.75%</span></p>
+            </div>
+             <div class="stat-item">
+            <img src="down-arrow-icon.png" alt="Falling">
+             <p>NASDAQ: <strong class="falling">13,045.20</strong> <span class="change negative">-1.15%</span></p>
+            </div>
+            <!-- Additional market stats -->
+        </div>
+            <!-- Existing content ... -->
+
+        <div class="market-info">
+        <h3>Market Insights</h3>
+            <div class="info-box">
+            <h4>Market Volatility</h4>
+            <p class="info-description">High volatility in the market indicates significant price movements.</p>
+            <button class="info-toggle" onclick="toggleInfo(this)">Learn More</button>
+            <div class="info-content" style="display: none;">
+            <p>Volatility refers to the frequency and severity of the price changes in the market. High volatility often means higher risk but also potential for greater rewards.</p>
+            </div>
+        </div>
+    <!-- Additional info boxes -->
+</div>
+
+<!-- ... Rest of the content ... -->
+
+<!-- ... existing content ... -->
+
+     </section>
+        
+
+    
     </main>
 
     <footer class="main-footer">
