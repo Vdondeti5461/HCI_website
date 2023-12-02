@@ -190,7 +190,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Simulate chatbot response
             setTimeout(() => {
                 const botMessage = document.createElement('p');
-                botMessage.textContent = `VaSid: I'm here to help!`;
+                botMessage.textContent = `VaSid: Welcome to Easy Trading ! How Can I assist you today?`;
                 chatBody.appendChild(botMessage);
             }, 1000);
         }
@@ -221,6 +221,32 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Additional JavaScript for sandbox interactions
+    // ... Existing functionality ...
+
+function toggleInfo(button) {
+    var infoContent = button.nextElementSibling;
+    infoContent.style.display = infoContent.style.display === 'none' ? 'block' : 'none';
+    button.textContent = infoContent.style.display === 'block' ? 'Show Less' : 'Learn More';
+}
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+        // Existing login functionality...
+        // Simulate updating market statistics
+        setInterval(function() {
+            document.querySelectorAll('.market-stats .stat-item strong').forEach(function(item) {
+                // This is just a placeholder. Real data would come from a financial data API.
+                var currentValue = parseFloat(item.innerText.replace(',', ''));
+                var change = (Math.random() - 0.5) * 10;
+                var newValue = currentValue + change;
+                item.innerText = newValue.toFixed(2);
+                item.nextElementSibling.innerText = (change >= 0 ? "+" : "") + change.toFixed(2) + "%";
+                item.nextElementSibling.className = "change " + (change >= 0 ? "positive" : "negative");
+            });
+        }, 5000); // Update every 5 seconds
+    });
+    
+    
 });
 
 
