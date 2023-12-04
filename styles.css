@@ -1,150 +1,171 @@
 /* Base Styles Home Page */
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f8;
-  }
-  
-  .main-header {
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f8;
+}
+
+.main-header {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
 
 .logo {
-     display:flexbox;
-     justify-content: space-between;
-     align-items: center;
-    }
+   display:flexbox;
+   justify-content: space-between;
+   align-items: center;
+  }
 
 .logo img {
-    width :100px;
-    height: 100px;
-    margin-right : 100px;
-    border-radius : 80px;
-    border : 1px solid #ccc;
-    padding: 10px;
-    padding-right: 10px;
-    margin-left: 10px;
-  
-  }
+  width :100px;
+  height: 100px;
+  margin-right : 100px;
+  border-radius : 80px;
+  border : 1px solid #ccc;
+  padding: 10px;
+  padding-right: 10px;
+  margin-left: 10px;
+
+}
 
 
-  .main-nav ul {
-    list-style-type: none;
-    display: flex;
-    margin: 0;
-    padding: 10px;
-    border-radius: 10px;
-    padding-left: 100px;
-    padding-right: 10px;
-    align-items: center  }
-  
-  .main-nav ul li {
-    margin-right: 20px;
-  }
-  
-  .main-nav ul li a {
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
-    padding : 15px;
-    border-radius : 10px
-  }
-  
-  .search-container {
-    display: flex ;
-    align-items: left;
-    background-color: #eaeaea;
-    border-radius: 5px;
-    margin-right: 600px;
-    margin-top: 4%;
-    overflow: hidden;
-  }
-  
-  .search-container input[type="text"] {
-    border: none;
-    padding: 10px;
-    outline: none;
-  }
-  
-  .search-container .search-button {
-    background: #007bff;
-    border: 1px;
-    color: white;
-    padding: 8px px;
-    cursor: pointer;
-  }
+.main-nav ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 10px;
+  border-radius: 10px;
+  padding-left: 100px;
+  padding-right: 10px;
+  align-items: center  }
+
+.main-nav ul li {
+  margin-right: 20px;
+}
+
+.main-nav ul li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  padding : 15px;
+  border-radius : 10px
+}
+
+.search-container {
+  display: flex ;
+  align-items: left;
+  background-color: #eaeaea;
+  border-radius: 5px;
+  margin-right: 600px;
+  margin-top: 4%;
+  overflow: hidden;
+}
+
+.search-container input[type="text"] {
+  border: none;
+  padding: 10px;
+  outline: none;
+}
+
+.search-container .search-button {
+  background: #007bff;
+  border: 1px;
+  color: white;
+  padding: 8px px;
+  cursor: pointer;
+}
   
   .hero-section {
-    background-color: rgb(184, 107, 184);
+    background-color:  darkgray;
     color: white;
     text-align: center;
     padding: 150px 30px;
-    display: flex;
+    display: -webkit-flex;
     justify-content: center;
     align-items: center;
     font-size: 115%;
   }
   
   .hero-content {
-    max-width: 800px;
+    max-width: 2000px;
+    text-align: center;
+    color : black;
+    border-radius: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    font-display: block ;
+    font-size: 23px;
   }
   
   .cta-button {
-    background-color: #ff9800;
+    background-color: palevioletred;
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 100px;
     cursor: pointer;
     transition: background-color 0.3s;
   }
   
   .cta-button:hover {
-    background-color: #e67e22;
+    background-color: #e67e22 ;
   }
   
   .features-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 10px;
     padding: 20px;
     text-align: center;
   }
   
   .feature-box {
-    background-color: skyblue;
+    background-color: white;
     padding: 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    border-radius: 5px;
+    box-shadow: 0 200px 400px rgba(0,0,0,0.1);
+    border-radius: 100px;
   }
+
+  .feature-box:hover{
+    background-color: palegoldenrod;
+  }
+ 
   
   .carousel-section {
     background-color: paleturquoise;
     padding: 20px;
     position: relative;
-    border-radius: 50px;
+    border-radius: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 21px;
   }
   
   .carousel-container {
     max-width: 800px;
     margin: auto;
     overflow: hidden;
+    font-size: 17px;
+    border-radius: 60px;
   }
+
+  
   
   .carousel-slide {
     display: flex;
     transition: transform 0.5s ease;
+  }
+
+  .carousel-slide:hover{
+    background-color: palegoldenrod;
   }
   
   .news-card {
@@ -152,8 +173,12 @@ body {
     margin: 10px;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    border-radius: 5px;
+    border-radius: 50px;
     min-width: 300px;
+  }
+
+  .news-card:hover{
+    background-color: #888;
   }
   
   .carousel-btn {
@@ -262,8 +287,8 @@ body {
     cursor: pointer;
   }
 
-/* Base styles */
-bbody {
+/* Base styles Educational*/
+body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -351,8 +376,10 @@ bbody {
 /* Section styles */
 .education-intro, .courses, .video-lectures, .additional-resources {
     text-align: center;
-    text-size-adjust: 100%;
-    padding: 1px;
+    text-size-adjust: 1000%;
+    padding: 50px;
+    border-radius: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
     
 }
@@ -360,8 +387,8 @@ bbody {
 .education-intro {
     background-color: #aaa;
     text-decoration-color: #41658b;
-    font-size: 19px;
-    padding-top: 15%;
+    font-size: 23px;
+    padding-top: 12%;
     padding-bottom: 7%;
     
 
@@ -370,17 +397,20 @@ bbody {
 .course-grid, .video-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    font-size: 19;
+    gap: 15px;
+    font-size: 19px;
+    border-radius: 100px;
+    
 }
 
 .course-card, .video-card {
     background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 20px 4px rgba(0,0,0,0.1);
     padding: 15px;
-    border-radius: 5px;
+    border-radius: 30px;
     text-align: left;
     font-size: 19;
+    padding-top: 15px;
 }
 
 .video-card iframe {
@@ -391,12 +421,13 @@ bbody {
 
 .resource-list {
     list-style-type: none;
-    padding: 0;
+    padding: 0px;
 }
 
 .resource-list li a {
     color: #007bff;
-    text-decoration: none;
+    text-decoration:underline;
+    font-size: 20px;
 }
 
 .button {
@@ -521,16 +552,22 @@ body {
   padding: 8px px;
   cursor: pointer;
 }
+
 /* FAQ Section Styles */
 .faq-section {
-  padding: 100px;
+  padding: 70px;
   text-align: center;
   padding-top: 200px;
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  font-style:oblique;
 }
 
 .faq-container {
   margin-top: 20px;
   text-align: left;
+  border-radius: 100px;
+  font-size: 20px;
 }
 
 .faq-item {
@@ -565,6 +602,26 @@ body {
   border-top: 1px solid #ddd;
 }
 
+.additional-resources {
+  text-align: center;
+  text-size-adjust: 100%;
+  padding: 1px;
+  border-radius: 100px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 25px;
+}
+
+.additional-support {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.additional-support li a {
+  color: palevioletred;
+  text-decoration:underline;
+  font-size: 200px;
+}
+
 .main-footer {
   background-color: #343a40;
   color: white;
@@ -586,7 +643,7 @@ body {
 }
 
 
-/* Support Css */
+/* Support Css support */
 /* Continue with existing styles... */
 
 body {
@@ -695,24 +752,28 @@ body {
 
 .chatbot-toggle {
   float: right;
+  
 }
 
 .chatbot-body {
   height: 250px;
-  overflow-y: auto;
+  overflow-y: hidden;
   padding: 5px;
   display: none;
+  font-size: 15px;
 }
 
 .chatbot-input {
   display: none;
   border-top: 1px solid #ddd;
   padding: 10px;
+  
 }
 
 .chatbot-input input {
   width: 90%;
   padding: 10px;
+  border-radius: 100px;
 }
 
 .chatbot-input button {
@@ -722,20 +783,7 @@ body {
   border: none;
   padding: 5px;
   cursor: pointer;
-  border-radius: 100px;
-}
-
-.main-footer {
-  background-color: #343a40;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-}
-
-.footer-links a {
-  color: #17a2b8;
-  text-decoration: none;
-  margin: 0 10px;
+  border-radius: 70px;
 }
 
 /* Responsive adjustments */
@@ -744,95 +792,8 @@ body {
 
 /* Continue with existing styles... support*/
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f8;
-}
-
-.main-header {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-}
-
-.logo {
-   display:flexbox;
-   justify-content: space-between;
-   align-items: center;
-  }
-
-.logo img {
-  width :100px;
-  height: 100px;
-  margin-right : 100px;
-  border-radius : 80px;
-  border : 1px solid #ccc;
-  padding: 10px;
-  padding-right: 10px;
-  margin-left: 10px;
-
-}
-
-
-.main-nav ul {
-  list-style-type: none;
-  display: flex;
-  margin: 0;
-  padding: 10px;
-  border-radius: 10px;
-  padding-left: 100px;
-  padding-right: 10px;
-  align-items: center  }
-
-.main-nav ul li {
-  margin-right: 20px;
-}
-
-.main-nav ul li a {
-  color: #333;
-  text-decoration: none;
-  font-weight: bold;
-  padding : 15px;
-  border-radius : 10px
-}
-
-.search-container {
-  display: flex ;
-  align-items: left;
-  background-color: #eaeaea;
-  border-radius: 5px;
-  margin-right: 600px;
-  margin-top: 4%;
-  overflow: hidden;
-}
-
-.search-container input[type="text"] {
-  border: none;
-  padding: 10px;
-  outline: none;
-}
-
-.search-container .search-button {
-  background: #007bff;
-  border: 1px;
-  color: white;
-  padding: 8px px;
-  cursor: pointer;
-}
-
-
-
 .support-section {
-  padding: 100px;
+  padding: 130px;
   text-align: center;
   font-size: 30px;
   background-color: white;
@@ -840,19 +801,21 @@ body {
 }
 
 .support-options {
-  display: inline-flex;
+  display:inline-table;
   justify-content: center;
-  gap: 25px;
-  margin-top: 5px;
+  gap: 100px;
+  margin-top: 50px;
   
 }
 
 .support-item {
-  border: 10px solid #9a8989;
-  padding: 7px;
-  border-radius: 100px;
+  border: 8px solid #9a8989;
+  padding: 30px;
+  border-radius: 1000px;
   box-shadow: 0 70px 90px rgba(0,0,0,0.2);
 }
+
+
 
 .call-button, .support-item button {
   background-color: black;
@@ -866,9 +829,11 @@ body {
   border-radius: 10px;
 }
 
+
 .call-button:hover, .support-item button:hover {
   background-color: black;
   color: white;
+  text-decoration: underline;
 }
 
 .main-footer {
@@ -979,46 +944,69 @@ body {
   cursor: pointer;
 }
 
+
 /* Community Intro Styles */
 .community-intro {
   padding: 60px;
   padding-top : 200px;
   text-align: center;
-  background-color: lightcoral;
+  background-color: grey;
   color: white;
-  border-radius: 8px;
+  border-radius: 60px;
   margin:20px;
+  font-size: 23px;
+  
 }
 
 /* Forums, Testimonials, and Events Styles */
 .community-forums, .community-testimonials, .community-events {
   padding: 10px;
   text-align: center;
+  border-radius: 50px;
 }
 
 .forum-grid, .testimonial-grid, .event-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
+  padding: 10px;
+  
 }
 
-.forum-card, .testimonial-card, .event-card {
-  background-color: #fff;
+.forum-card {
+  background-color: palegreen;
   padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  border-radius: 30px;
+  box-shadow: 0 20px 5px rgba(0,0,0,0.2);
+  text-align: left;
+}
+
+.testimonial-card{
+  background-color:whitesmoke;
+  padding: 15px;
+  border-radius: 30px;
+  box-shadow: 0 20px 5px rgba(0,0,0,0.2);
+  text-align: left;
+}
+
+.event-card{
+  background-color:palegoldenrod;
+  padding: 15px;
+  border-radius: 30px;
+  box-shadow: 0 20px 5px rgba(0,0,0,0.2);
   text-align: left;
 }
 
 .testimonial-card blockquote {
   font-style: italic;
+  
 }
 
 .event-card a, .forum-card a {
   display: inline-block;
   margin-top: 10px;
   color: #007bff;
-  text-decoration: none;
+  text-decoration:underline;
 }
 
 .main-footer {
@@ -1050,9 +1038,8 @@ body {
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 10px;
+  padding: 0;
   background-color: #f4f4f8;
-  padding-bottom: 10px;;
 }
 
 .main-header {
@@ -1060,12 +1047,12 @@ body {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   position: fixed;
   width: 100%;
-  top: 10px;
-  z-index: 100;
+  top: 0;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 .logo {
@@ -1091,17 +1078,46 @@ body {
   list-style-type: none;
   display: flex;
   margin: 0;
-  padding: 0;
-}
+  padding: 10px;
+  border-radius: 10px;
+  padding-left: 100px;
+  padding-right: 10px;
+  align-items: center  }
 
 .main-nav ul li {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .main-nav ul li a {
   color: #333;
   text-decoration: none;
   font-weight: bold;
+  padding : 15px;
+  border-radius : 10px
+}
+
+.search-container {
+  display: flex ;
+  align-items: left;
+  background-color: #eaeaea;
+  border-radius: 5px;
+  margin-right: 600px;
+  margin-top: 4%;
+  overflow: hidden;
+}
+
+.search-container input[type="text"] {
+  border: none;
+  padding: 10px;
+  outline: none;
+}
+
+.search-container .search-button {
+  background: #007bff;
+  border: 1px;
+  color: white;
+  padding: 8px px;
+  cursor: pointer;
 }
 
 
@@ -1242,10 +1258,12 @@ body {
 }
 
 .sandbox-info ul {
-  text-align: left;
+  text-align: center;
   list-style-type: disc;
-  margin: 15px;
-  padding-left: 20px;
+  margin: 50px;
+  padding-left: 100px;
+  padding-top: 20px;
+  padding-right: 100px;
 }
 
 .sandbox-info li {
@@ -1295,5 +1313,28 @@ body {
   margin-top: 10px;
 }
 
+/*  new sandbox info nav */
 
 
+.sandbox-info nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.sandbox-info nav ul li {
+  margin-right: 20px;
+}
+
+.sandbox-info nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.sandbox-info nav ul li a:hover {
+  color: #ff9900;
+}
