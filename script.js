@@ -158,6 +158,26 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // support functionality
 
+
+function openChat() {
+    // Placeholder for chat functionality
+    toggleChatbot();
+    
+    
+    // This would normally initiate a chat widget or redirect to a chat interface
+}
+
+function openMail() {
+    const email = 'example@example.com'; // Replace with your recipient's email address
+    const subject = 'Subject of the email'; // Replace with the desired subject
+    const body = 'Body of the email'; // Replace with the desired email body text
+
+    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    // Open the default email client
+    window.open(mailtoLink);
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     // Chatbot functionality
     window.toggleChatbot = function() {
@@ -186,24 +206,56 @@ document.addEventListener('DOMContentLoaded', function() {
             newMessage.textContent = `You: ${message}`;
             chatBody.appendChild(newMessage);
             inputField.value = '';
-
-            // Simulate chatbot response
+    
+            // Simulate chatbot responses based on user input
             setTimeout(() => {
-                const botMessage = document.createElement('p');
-                botMessage.textContent = `VaSid: Welcome to Easy Trading ! How Can I assist you today?`;
-                chatBody.appendChild(botMessage);
+                let botMessage = '';
+                switch (message.toLowerCase()) {
+                    case 'hello':
+                        botMessage = `VaSid: Hi there! How can I assist you today?`;
+                        break;
+                    case 'how do I place an order?':
+                        botMessage = `VaSid: To place an order, follow these steps...`;
+                        break;
+                    case 'what are the trading hours?':
+                        botMessage = `VaSid: Our trading hours are...`;
+                        break;
+                    case 'account balance':
+                        botMessage = `VaSid: You can check your account balance by...`;
+                        break;
+                    default:
+                        botMessage = `VaSid: I'm sorry, I didn't understand your question. Can you please rephrase it?`;
+                        break;
+                }
+                const botResponse = document.createElement('p');
+                botResponse.textContent = botMessage;
+                chatBody.appendChild(botResponse);
             }, 1000);
         }
     };
-
+    
     toggleChatbot(); // Initialize chatbot in closed state
 });
 
-function openChat() {
-    // Placeholder for chat functionality
-    alert('Opening chat with VaSid...');
-    // This would normally initiate a chat widget or redirect to a chat interface
+window.sendMessage = function() {
+    // ... (your existing sendMessage function code)
+    // After appending the user and chatbot messages, scroll to the bottom
+    chatBody.scrollTop = chatBody.scrollHeight;
+};
+
+function clearChat() {
+    const chatBody = document.querySelector('.chatbot-body');
+    chatBody.innerHTML = ''; // Clear the chat by removing all child elements
 }
+
+function closeChat() {
+    const chatBody = document.querySelector('.chatbot-body');
+    chatBody.style.display = 'none'; // Hide the chatbot
+}
+
+
+
+
 
 // Add any other support functionalities as required
 
@@ -250,3 +302,4 @@ function toggleInfo(button) {
 });
 
 
+// new code js
